@@ -17,15 +17,6 @@ interface ButtonProps {
   href?: string; // Adding href for the anchor tag
 }
 
-function TextOverlay({ title, description }: TextOverlayProps) {
-  return (
-    <div className="text-center mb-12">
-      <h1 className="text-[3.75rem] hover:text-neutral-300 font-semibold mb-4 lg:px-44 xl:px-44">{title}</h1>
-      {/* <p className="text-lg">{description}</p> */}
-    </div>
-  );
-}
-
 function Button({ label, onClick, href }: ButtonProps) {
   if (href) {
     return (
@@ -70,11 +61,11 @@ function VideoBackground({ videoSource, children }: VideoBackgroundProps) {
   };
 
   return (
-    <div className="relative">
+    <div className="relative px-12">
       {isYouTubeURL(videoSource) ? (
         <iframe
           src={videoSource.replace("watch?v=", "embed")}
-          className="w-full h-[100vh] object-cover"
+          className="w-[75rem]  h-[100vh] object-cover"
           frameBorder="0"
           allow="autoplay; encrypted-media"
           allowFullScreen
@@ -82,7 +73,7 @@ function VideoBackground({ videoSource, children }: VideoBackgroundProps) {
       ) : (
         <video
           ref={videoRef}
-          className="w-full h-[100vh] object-cover"
+          className="w-[75rem] h-[100vh] object-cover rounded-xl"
           autoPlay
           loop
           muted
@@ -93,10 +84,6 @@ function VideoBackground({ videoSource, children }: VideoBackgroundProps) {
       )}
 
       <div className="absolute bottom-0 left-0 right-0 bg-transparent p-4 text-white text-center">
-        <TextOverlay
-          title="Creating safe AGI that benefits all of humanity"
-          description="Explore the amazing content we have to offer."
-        />
         <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4">
           <Button
             label={isPlaying ? " Pause video" : "Play video"}
@@ -112,9 +99,9 @@ function VideoBackground({ videoSource, children }: VideoBackgroundProps) {
 
 function BgVideo() {
   return (
-    <VideoBackground videoSource="https://res.cloudinary.com/dyqtzsm0b/video/upload/v1720547466/fvop2wtlyqdj0m3dexkd.mp4"></VideoBackground>
-  );
-  
+    <div className="py-8">
+    <VideoBackground videoSource="https://res.cloudinary.com/dyqtzsm0b/video/upload/v1720547466/fvop2wtlyqdj0m3dexkd.mp4"/>
+    </div>
+  );  
 }
-
 export default BgVideo;

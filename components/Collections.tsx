@@ -5,7 +5,7 @@ import Link from "next/link";
 const Collections = async () => {
   const collections = await getCollections();
   return (
-    <div className="flex flex-col items-center gap-10 py-8 px-5">
+    <div className="flex flex-col items-center gap-10 pt-8 px-5">
       <p className="text-heading1-bold">Collections</p>
       {!collections || collections.length === 0 ? (
         <p className="text-body-bold">No collections found</p>
@@ -21,6 +21,9 @@ const Collections = async () => {
                 height={200}
                 className="rounded-lg cursor-pointer h-64"
               />
+              <p className="text-center font-semibold mt-2">
+                {collection.title}
+              </p>
             </Link>
           ))}
         </div>
@@ -30,4 +33,3 @@ const Collections = async () => {
 };
 
 export default Collections;
-

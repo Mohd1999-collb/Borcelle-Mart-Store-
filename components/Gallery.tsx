@@ -15,7 +15,8 @@ const Gallery = ({ productMedia }: { productMedia: string[] }) => {
         alt="product"
         className="w-96 h-96 rounded-lg shadow-xl object-cover"
       />
-      <div className="flex gap-2 overflow-auto tailwind-scrollbar-hide">
+      {/* <div className="flex gap-2 overflow-auto scrollbar-hide"> */}
+      <div className="flex gap-2 whitespace-nowrap overflow-auto scrollbar-hide md:scrollbar-default">
         {productMedia.map((image, index) => (
           <Image
             key={index}

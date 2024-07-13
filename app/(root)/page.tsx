@@ -1,6 +1,7 @@
 import Collections from "@/components/Collections";
 import ImageCarousal from "@/components/ImageCarousal";
 import ProductList from "@/components/ProductList";
+import InfiniteAnimations from "@/components/InfiniteAnimations";
 import Image from "next/image";
 
 import BgVideo from "@/components/BgVideo";
@@ -32,6 +33,8 @@ export default function Home() {
     }
   ];
 
+  let brandImage : Array<String> = ["/allenSoly.png", "/fabIndia.png", "/gucci.png",  "/levi.png", "/nike.png", "/puma.png"];
+
   return (
     <div className="bg-[#f0d8af]">
       {/* <Image src="/banner.png" alt="banner" width={2000} height={1000} className="w-screen" /> */}
@@ -39,6 +42,7 @@ export default function Home() {
       <Collections />
       <ProductList />
       <BgVideo/>
+      <InfiniteAnimations brandImage={brandImage}/>
     </div>
   );
 }
