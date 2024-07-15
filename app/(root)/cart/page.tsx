@@ -71,7 +71,7 @@ const Cart = () => {
                     {cartItem.size && (
                       <p className="text-small-medium">{cartItem.size}</p>
                     )}
-                    <p className="text-small-medium">${cartItem.item.price}</p>
+                    <p className="text-small-medium">₹ {cartItem.item.price}</p>
                   </div>
                 </div>
 
@@ -106,7 +106,7 @@ const Cart = () => {
         </p>
         <div className="flex justify-between text-body-semibold">
           <span>Total Amount</span>
-          <span>${totalRounded}</span>
+          <span>₹ {totalRounded}</span>
         </div>
         <button
           className="border rounded-lg text-body-bold bg-white py-3 w-full hover:bg-black hover:text-white"
