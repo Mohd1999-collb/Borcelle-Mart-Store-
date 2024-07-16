@@ -5,6 +5,8 @@ Borcelle Mart Admin Dashboard - https://github.com/Mohd1999-collb/Borcelle-Mart-
 
 ## Features of Borcelle Mart
 
+![Screenshot (55)](https://github.com/user-attachments/assets/ea2f0115-0ed8-4e69-854a-a8955f6b169b)
+
 • Developed a comprehensive e-commerce platform using Next.js,
 featuring both front-end and back-end. Includes an admin panel, user
 and item information, and a seamless sign-up and purchase process.
