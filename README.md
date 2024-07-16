@@ -3,9 +3,13 @@ Borcelle Mart Admin Dashboard - https://github.com/Mohd1999-collb/Borcelle-Mart-
 
 ##
 
-## Features of Borcelle Mart
+## Overview
+Borcelle Mart is a comprehensive e-commerce platform designed to provide a seamless shopping experience for users. The platform includes both a user-friendly interface for customers and a robust admin panel for store management. The project showcases advanced features such as user authentication, secure payment processing, and responsive design, ensuring accessibility across various devices.
 
 ![Screenshot (55)](https://github.com/user-attachments/assets/ea2f0115-0ed8-4e69-854a-a8955f6b169b)
+
+## Features of Borcelle Mart
+
 
 • Developed a comprehensive e-commerce platform using Next.js,
 featuring both front-end and back-end. Includes an admin panel, user
